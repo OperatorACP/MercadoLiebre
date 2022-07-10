@@ -1,29 +1,32 @@
 /*Make the full document a specific color */
 
 *{
-    background-color: white;
+    background-color: EAC926;
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: white;
+    background-color: #EAC926;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     flex-wrap: wrap;
+
   }
 
   .nav-bar-button{
   display: flex;
+  background-color: #EAC926;
   flex-direction: row;
   padding: 10px;
   list-style: none;
+  
   }
   
   /* Style the links inside the navigation bar */
@@ -31,9 +34,10 @@
     display: flex;
     color: blue;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
+    background-color: #EAC926;
     
   }
   
@@ -56,8 +60,44 @@
     border: none;
     margin-top: 8px;
     margin-right: 16px;
-    font-size: 17px;
+    font-size: 12px;
   }
+
+.searchBar{
+  border-radius: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  outline-style: solid;
+  outline-width: 1px;
+  
+}
+
+
+.searchBox{
+  text-indent:30px;
+  margin-top:10px;
+  width:200px
+}
+
+.fa-solid fa-magnifying-glass{
+
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.fa-solid fa-hand-holding-dollar{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
@@ -77,8 +117,10 @@
 #photos-logo{
     margin-top: 30px;
     display: block;
-    width: 100%;
-    margin-top: 9px;
+    width:100%;
+  height: 100%;
+    background-color: #EAC926;
+   
 }
 
   #photos-product{
@@ -86,23 +128,27 @@
     display: block;
     width: 100%;
     margin-top: 9px;
+    background-color: #EAC926;
+    
 }
 
 .section{
     padding: 50px;
     display: flex;
     justify-content: center;
+    font-size: 24px;  
+    background-color: #EAC926;
 }
 
 .price{
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     margin-top: 5px;
     font-weight: normal;
 }
 
 .discount{
-        font-size: 20px;
+        font-size: 16px;
         padding: 10px;
         font-weight: normal;
 }
@@ -113,28 +159,25 @@
     font-weight: bold;
 }
 
+.fa-solid fa-credit-card{
+  width: 500px;
+}
+
 .footer-title{
-  font-size: 17px;
+  font-size: 16px;
   padding: 10px;
   font-weight: bold;
   font-style: italic;
   display:flex;
   margin-top: 12px;
-  
+  justify-content: center;
 }
 
 .footer-text{
-  font-size: 15px;
+  font-size: 16px;
   padding: 10px;
   font-weight: normal;
+  text-align: center;
+ 
 }
 
-
-.searchBar{
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-style: solid;
-  width: 200px;
-}
