@@ -1,12 +1,12 @@
 /*Make the full document a specific color */
 
 *{
-    background-color: EAC926;
+    background-color: #EAC926;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
-
 
 /* Add a black background color to the top navigation bar */
 .topnav {
@@ -17,22 +17,13 @@
     align-items: center;
     text-decoration: none;
     flex-wrap: wrap;
-
   }
 
-  .nav-bar-button{
-  display: flex;
-  background-color: #EAC926;
-  flex-direction: row;
-  padding: 10px;
-  list-style: none;
-  
-  }
-  
+ 
   /* Style the links inside the navigation bar */
   .topnav a {
     display: flex;
-    color: blue;
+    color: black;
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -63,6 +54,16 @@
     font-size: 12px;
   }
 
+  #s{
+  background-color: white;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  }
+
 .searchBar{
   border-radius: 1px;
   border-style: solid;
@@ -75,6 +76,12 @@
   
 }
 
+.navbarsection{
+ padding-top: 20px;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+}
 
 .searchBox{
   text-indent:30px;
@@ -82,62 +89,89 @@
   width:200px
 }
 
-.fa-solid fa-magnifying-glass{
+.fa-magnifying-glass{
 
-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: white;
+outline: auto;
+height: 2.5vh;
+width: 3vw;
+margin-top: 7px;
 }
 
-
-.fa-solid fa-hand-holding-dollar{
-  height: 100vh;
+.searchPlusIcon{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  padding-bottom: 20px;
 }
 
-  
-  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-  @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
+
+.fa-bars{
+
+  color: white;
+  background:blue;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 6vw;
+  height: 5vh;
+  margin-left: 50%;
+  border-radius: 20%;
+}
+
+
+
+    @media screen and (max-width: 700px){
+      .topnav {
+        display: flex;
+        flex-direction: column-reverse  ;
+        align-items:flex-start;
+      }
     }
-    .topnav input[type=text] {
-      border: 1px solid #ccc;
+
+    @media screen and (min-width: 700px){
+      .topnav {
+        display: flex;
+        flex-direction: column-reverse  ;
+        align-items:flex-start;
+      }
     }
-  }
 
 #photos-logo{
-    margin-top: 30px;
-    display: block;
+
     width:100%;
-  height: 100%;
+    height: 100%;
     background-color: #EAC926;
    
 }
 
-  #photos-product{
-    margin-top: 30px;
-    display: block;
-    width: 100%;
-    margin-top: 9px;
-    background-color: #EAC926;
+#photos-product{
     
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 30px ;
 }
+
+.image { 
+  position: relative; 
+  width: 100%; /* for IE 6 */
+}
+
 
 .section{
     padding: 50px;
-    display: flex;
+    text-align: center;
     justify-content: center;
     font-size: 24px;  
     background-color: #EAC926;
+    height: 100%;
+    width: 100%;
 }
 
 .price{
@@ -145,6 +179,8 @@ align-items: center;
     padding: 10px;
     margin-top: 5px;
     font-weight: normal;
+    height: 100%;
+    width: 100%;
 }
 
 .discount{
@@ -159,18 +195,38 @@ align-items: center;
     font-weight: bold;
 }
 
-.fa-solid fa-credit-card{
-  width: 500px;
+.fa-credit-card{
+ 
+  background-color: #EAC926;
+  color: blue;
+  padding: 10px;
+}
+
+
+.fa-gift{
+  background-color: #EAC926;
+  color: blue;
+  padding: 10px;
+}
+
+.fa-user-shield{
+  background-color: #EAC926;
+  color: blue;
+  padding: 10px;
 }
 
 .footer-title{
   font-size: 16px;
-  padding: 10px;
   font-weight: bold;
   font-style: italic;
   display:flex;
-  margin-top: 12px;
-  justify-content: center;
+  background-color:#EAC926;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .footer-text{
@@ -178,6 +234,15 @@ align-items: center;
   padding: 10px;
   font-weight: normal;
   text-align: center;
- 
+ background-color: #EAC926;
+ width: 100%;
+ height: 100%;
 }
 
+.footer{
+  background-color: #EAC926;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

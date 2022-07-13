@@ -15,32 +15,39 @@ rel="stylesheet" />
     <img id="photos-logo" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
     <h1 class="section"> <i class='fas fa-hand-holding-usd'></i> Comprá en cuotas y sin tarjeta de crédito</h1>
     <div class="topnav">
-      <ul>
+
+ <ul>
       <li><a href="#">Ofertas</a></li>
       <li><a href="#">Tiendas Oficiales</a></li>
       <li><a href="#">Vender</a></li>
       <li><a href="#">Ayuda</a></li>
-    </ul>
 
-    <ul>
+<div class="navbarsection">
+
        <a href="#"><i class="fa fa-fw fa-envelope"></i> Creá tu cuenta</a> 
        <a href="#"><i class="fa fa-arrow-right"></i>Ingresá</a> 
        <a href="#"><i class="fa fa-shopping-cart"></i> Mis compras</a></li>
-    </ul>
+   
+</div> 
+  
+ </ul>
 
-    <div class="burger-menu">
-      <i class="fas fa-bars"></i>
-    </div>
+  <form class='searchPlusIcon' action="/" method="get">
+<label for=""></label>
+<input id="s" type="text" name="s" placeholder="Buscar productos, marcas..." />
+<i class="fa-solid fa-magnifying-glass"></i>
+</form>
+</div>
 
-<div class="topnav">
+  <i class="fas fa-bars"></i>
 
-    <i class="fa-solid fa-magnifying-glass"></i>
+<!--Add to Cart Form-->   
+<form action="/" method="post">
+  <input type="hidden" name="product" value="A1">
+  <input type="hidden" name="quantity" value="1">
+</form>
+</div>
 
-  </div>
-
-    <input class="searchBar" type="text" placeholder="Buscar productos, marcas...">
-
-    </div> 
   </header>
 
   <main>
@@ -48,12 +55,16 @@ rel="stylesheet" />
 
     <h1 class="section">Basado en tu última visita</h1>
 
+<div class="image">
+
     <img id="photos-product" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera-Moulinex">
 
     <h2 class="price">$6.770</h2>
     <h2 class="discount">40% OFF</h2>
     <h2 class="productName">Cafetera Moulinex</h2>
     
+  </div>
+
     <img id="photos-product" src="/images/img-macbook-pro-2019.jpg" alt="Macbook-Photo">
     
     <h2 class="price">$230.000</h2>
@@ -103,8 +114,9 @@ rel="stylesheet" />
 
   <footer>
 
+<div class="footer">
     
-<h3 class="footer-title"><i class="fa-solid fa-credit-card"></i>Pagá con tarjeta o en efectivo</h3>
+<h3 class="footer-title"><i class="fas fa-credit-card"></i>Pagá con tarjeta o en efectivo</h3>
 
 <h4 class="footer-text"> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
   puntos de pago. ¡Y siempre es seguro!.</h4>
@@ -120,7 +132,7 @@ rel="stylesheet" />
     porque estás siempre protegid@.</h4>
 
   <h4 class="footer-title"> Copyright © 1999-2020  MercadoLiebre S.R.L.</h4>
-
+</div>
   </footer>
 
 </body>
