@@ -1,14 +1,20 @@
 const express = require('express');
-const {resolve} = require('path');
 const app = express();
-const port = process.env.PORT || 2020;
-app.listen(port, () => { console.log('Servidor corriendo en el puerto ' + port);
-});
-const public = resolve(__dirname, 'public');
-const static = express.static(public);
-app.use(static);
+app.use(express.static('public'));
+const puerto = 2020;
 
-app.get('/', (req, res) => {
-  let view = resolve(__dirname, 'views','index.html');
-  return res.sendFile(view);
-}) 
+app.listen(process.env.PORT || puerto, () => {
+    console.log("Servidor corriendo en el puerto " + puerto);
+});
+
+app.get('/', (req,res)=>{
+    res.sendFile(__dirname + '/views/home.html');
+});
+
+app.get('/login', (req,res)=>{
+    res.sendFile(__dirname + '/views/login.html');
+});
+
+app.get('/register', (req,res)=>{
+    res.sendFile(__dirname + '/views/register.html');
+});
